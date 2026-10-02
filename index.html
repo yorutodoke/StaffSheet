@@ -137,7 +137,7 @@
         <div class="step-rail"><span class="step-number">1</span></div>
         <article class="step-card">
           <div class="step-head"><p class="step-kicker">Google Sheets</p><h2>名簿をGroupごとに作る</h2><p class="step-summary">1行目にGroup名、2行目以降にスタッフのVRChat DisplayNameを入力します。</p></div>
-          <figure><img src="../image/sheet-01-group-columns.png" alt="1行目に店長とスタッフ、下の行にDisplayNameを入力したGoogle Sheetsの例" loading="lazy"><figcaption>1行目の各列がGroup名、その下の行が所属スタッフです。</figcaption></figure>
+          <figure><img src="image/sheet-01-group-columns.png" alt="1行目に店長とスタッフ、下の行にDisplayNameを入力したGoogle Sheetsの例" loading="lazy"><figcaption>1行目の各列がGroup名、その下の行が所属スタッフです。</figcaption></figure>
           <div class="step-body"><p>1セルに1つの名前を入力してください。列を増やすとGroupを追加できます。名前はVRChatのDisplayNameと同じ表記にします。大文字・小文字も区別されます。</p></div>
         </article>
       </section>
@@ -146,8 +146,8 @@
         <div class="step-rail"><span class="step-number">2</span></div>
         <article class="step-card">
           <div class="step-head"><p class="step-kicker">Google Sheets</p><h2>閲覧リンクを共有する</h2><p class="step-summary">SheetStaffが名簿を取得できるよう、共有範囲と権限を設定します。</p></div>
-          <figure><img src="../image/sheet-02-sharing-menu.png" alt="Google Sheetsのファイル共有メニュー"><figcaption>「ファイル」→「共有」→「他のユーザーと共有」を開きます。</figcaption></figure>
-          <figure><img src="../image/sheet-03-link-access.png" alt="リンクを知っている全員、閲覧者に設定した共有ダイアログ" loading="lazy"><figcaption>一般的なアクセスを「リンクを知っている全員」、権限を「閲覧者」にします。</figcaption></figure>
+          <figure><img src="image/sheet-02-sharing-menu.png" alt="Google Sheetsのファイル共有メニュー"><figcaption>「ファイル」→「共有」→「他のユーザーと共有」を開きます。</figcaption></figure>
+          <figure><img src="image/sheet-03-link-access.png" alt="リンクを知っている全員、閲覧者に設定した共有ダイアログ" loading="lazy"><figcaption>一般的なアクセスを「リンクを知っている全員」、権限を「閲覧者」にします。</figcaption></figure>
           <div class="step-body"><p>共有ダイアログでリンクをコピーします。このURLを次のStepでUnityへ入力します。</p><div class="callout"><strong>注意</strong>　「ウェブに公開」のCSV URLではなく、Google Sheetsの共有URLを使ってください。リンクを知る人は名簿を閲覧できます。また、VRChat DisplayNameは本人が変更できるため、SheetStaffを秘密情報や重要操作を守る認証として使わないでください。</div></div>
         </article>
       </section>
@@ -156,8 +156,8 @@
         <div class="step-rail"><span class="step-number">3</span></div>
         <article class="step-card">
           <div class="step-head"><p class="step-kicker">Unity · 初回のみ</p><h2>利用規約に同意し、Managerを用意する</h2><p class="step-summary">SheetStaffの設定Windowを開き、SceneにManagerを1つ作成します。</p></div>
-          <figure><img src="../image/unity-03-terms.png" alt="SheetStaffの利用規約画面"><figcaption>初回起動時は利用規約を確認して同意します。</figcaption></figure>
-          <figure><img src="../image/unity-04-manager-missing.png" alt="Managerがないときに表示されるSheetStaff Window" loading="lazy"><figcaption>Managerがない場合は「Managerを作成」を選択します。</figcaption></figure>
+          <figure><img src="image/unity-03-terms.png" alt="SheetStaffの利用規約画面"><figcaption>初回起動時は利用規約を確認して同意します。</figcaption></figure>
+          <figure><img src="image/unity-04-manager-missing.png" alt="Managerがないときに表示されるSheetStaff Window" loading="lazy"><figcaption>Managerがない場合は「Managerを作成」を選択します。</figcaption></figure>
           <div class="step-body"><ol><li>Unityのメニューから <code>Tools &gt; ARTS &gt; SheetStaff</code> を開きます。</li><li>SceneにManagerがなければ「Managerを作成」を押します。通常はSceneごとに1つだけ配置します。</li></ol><p>すでにManagerがあるSceneでは「現在のSceneからManagerを取得」を選びます。</p></div>
         </article>
       </section>
@@ -166,8 +166,8 @@
         <div class="step-rail"><span class="step-number">4</span></div>
         <article class="step-card">
           <div class="step-head"><p class="step-kicker">Unity · Sheet</p><h2>共有URLを入力してSheetを読み込む</h2><p class="step-summary">SheetタブでURLを読み込み、Group一覧をUnityへ取り込みます。</p></div>
-          <figure><img src="../image/unity-06-shared-url-field.png" alt="共有URLをSheetタブへ入力する欄"><figcaption>コピーした共有URLを「Google Sheets 共有URL」欄へ貼り付けます。</figcaption></figure>
-          <figure><img src="../image/unity-07-sheet-loaded.png" alt="Sheet読込成功とGroup数の表示" loading="lazy"><figcaption>「Sheetを読み込む」を押し、読み込み成功とGroup数を確認します。</figcaption></figure>
+          <figure><img src="image/unity-06-shared-url-field.png" alt="共有URLをSheetタブへ入力する欄"><figcaption>コピーした共有URLを「Google Sheets 共有URL」欄へ貼り付けます。</figcaption></figure>
+          <figure><img src="image/unity-07-sheet-loaded.png" alt="Sheet読込成功とGroup数の表示" loading="lazy"><figcaption>「Sheetを読み込む」を押し、読み込み成功とGroup数を確認します。</figcaption></figure>
           <div class="step-body"><p>取得開始方式は、まず既定の「自動」のままで進められます。別タブを使う場合などを除き、Advancedのgidは変更不要です。</p><div class="callout"><strong>注意</strong>　取得にはVRChatクライアント側で <code>Allow Untrusted URLs</code> が許可されている必要があります。Googleの共有設定も確認してください。</div></div>
         </article>
       </section>
@@ -176,9 +176,9 @@
         <div class="step-rail"><span class="step-number">5</span></div>
         <article class="step-card">
           <div class="step-head"><p class="step-kicker">Unity · Groups</p><h2>Groupごとの動作を設定する</h2><p class="step-summary">名簿のGroupを選び、必要なTeleportとObject Actionsを登録します。</p></div>
-          <figure><img src="../image/unity-10-group-actions.png" alt="Groupsタブで店長Groupを選択した状態"><figcaption>左側でGroupを選択します。Groupごとに設定を行います。</figcaption></figure>
-          <figure><img src="../image/unity-11-teleport-point.png" alt="スタッフGroupでTeleport PointとObject Actionsを設定した例" loading="lazy"><figcaption>Teleportを使う場合は有効化し、Scene内の移動先Transformを指定します。</figcaption></figure>
-          <figure><img src="../image/unity-09-object-actions-scene.png" alt="HierarchyのObjectをGroup Actionsへ割り当てた例"><figcaption>ON/OFF対象はHierarchyから割り当てます。</figcaption></figure>
+          <figure><img src="image/unity-10-group-actions.png" alt="Groupsタブで店長Groupを選択した状態"><figcaption>左側でGroupを選択します。Groupごとに設定を行います。</figcaption></figure>
+          <figure><img src="image/unity-11-teleport-point.png" alt="スタッフGroupでTeleport PointとObject Actionsを設定した例" loading="lazy"><figcaption>Teleportを使う場合は有効化し、Scene内の移動先Transformを指定します。</figcaption></figure>
+          <figure><img src="image/unity-09-object-actions-scene.png" alt="HierarchyのObjectをGroup Actionsへ割り当てた例"><figcaption>ON/OFF対象はHierarchyから割り当てます。</figcaption></figure>
           <div class="step-body"><ul><li><strong>Teleport：</strong>「このGroupのTeleportを使用する」をONにし、Teleport Pointへ移動先のTransformを指定します。使わない場合はOFFのままにします。</li><li><strong>Object Actions：</strong>「ON Objectを追加」「OFF Objectを追加」で対象GameObjectを登録します。スタッフ所属中にONにしたいもの、OFFにしたいものを分けます。</li><li>名簿の全Groupを選び、必要な設定を繰り返します。</li></ul><div class="callout tip"><strong>Tip</strong>　1人を複数Groupに登録できます。TeleportはSheetの左端に近い所属Groupのうち有効な移動先が使われ、同じObjectのON/OFFが競合した場合も左側のGroupが優先されます。Guestや取得失敗時はScene開始時のObject状態に戻るため、スタッフだけに見せるObjectは最初にOFFにしておきます。</div></div>
         </article>
       </section>
@@ -187,11 +187,11 @@
         <div class="step-rail"><span class="step-number">6</span></div>
         <article class="step-card">
           <div class="step-head"><p class="step-kicker">任意 · Role Tag</p><h2>スタッフの頭上Tagを設定する</h2><p class="step-summary">頭上にRole表示を出したい場合だけ設定します。通常のSheetStaff判定には必須ではありません。</p></div>
-          <figure><img src="../image/unity-15-role-tag-enabled.png" alt="Role Tagを有効にしたRole Tagタブ"><figcaption>Role / TagタブでRole TagをONにし、GroupごとのRole名を設定します。</figcaption></figure>
-          <figure><img src="../image/unity-18-tag-design-overview.png" alt="Tag Design WindowとRole一覧"><figcaption>Apply後、「設定を適用 / 見た目を変更」からTag Designを開けます。</figcaption></figure>
-          <figure><img src="../image/unity-19-tag-design-text.png" alt="文字表示のTag Design設定"><figcaption>標準のText表示では、表示文字やサイズ、高さを調整できます。</figcaption></figure>
-          <figure><img src="../image/unity-20-tag-design-image.png" alt="画像表示のTag Design設定"><figcaption>Image表示ではSpriteを選べます。</figcaption></figure>
-          <figure><img src="../image/unity-21-tag-scene-preview.png" alt="Tag DesignとScene Previewで表示を確認する例" loading="lazy"><figcaption>Scene PreviewでScene上の見え方を確認できます。</figcaption></figure>
+          <figure><img src="image/unity-15-role-tag-enabled.png" alt="Role Tagを有効にしたRole Tagタブ"><figcaption>Role / TagタブでRole TagをONにし、GroupごとのRole名を設定します。</figcaption></figure>
+          <figure><img src="image/unity-18-tag-design-overview.png" alt="Tag Design WindowとRole一覧"><figcaption>Apply後、「設定を適用 / 見た目を変更」からTag Designを開けます。</figcaption></figure>
+          <figure><img src="image/unity-19-tag-design-text.png" alt="文字表示のTag Design設定"><figcaption>標準のText表示では、表示文字やサイズ、高さを調整できます。</figcaption></figure>
+          <figure><img src="image/unity-20-tag-design-image.png" alt="画像表示のTag Design設定"><figcaption>Image表示ではSpriteを選べます。</figcaption></figure>
+          <figure><img src="image/unity-21-tag-scene-preview.png" alt="Tag DesignとScene Previewで表示を確認する例" loading="lazy"><figcaption>Scene PreviewでScene上の見え方を確認できます。</figcaption></figure>
           <div class="step-body"><ol><li>Role / TagタブでRole TagをONにし、必要に応じてGroupごとのRole名を編集します。</li><li>Step 7でApplyすると、Tag用のPlayerObjectや標準表示が自動設定されます。</li><li>必要ならTag DesignでText / Image、表示文字や画像、高さなどを調整します。</li></ol><div class="callout"><strong>注意</strong>　Role Tagの切替やRole名の編集だけではSceneへ反映されません。必ず最後にApplyしてください。</div></div>
         </article>
       </section>
@@ -200,9 +200,9 @@
         <div class="step-rail"><span class="step-number">7</span></div>
         <article class="step-card">
           <div class="step-head"><p class="step-kicker">Apply · Save</p><h2>設定をSceneへ反映して保存する</h2><p class="step-summary">最後に設定を適用し、Sceneファイルを保存します。</p></div>
-          <figure><img src="../image/unity-12-apply-footer.png" alt="Applyボタンと未保存Scene状態が表示されたSheetStaff Window"><figcaption>Footerで検証結果を確認し、Applyを押します。Errorがあれば表示された「開く」から修正します。</figcaption></figure>
-          <figure><img src="../image/unity-17-role-tag-applied.png" alt="Role TagをApplyした後のScene保存案内"><figcaption>Apply後はFooterにScene保存の案内が表示されます。</figcaption></figure>
-          <figure><img src="../image/unity-22-manager-and-tag.png" alt="SceneにManagerとTag PlayerObjectが配置された状態" loading="lazy"><figcaption>Role Tagを有効にした場合は、ApplyでTag PlayerObjectも設定されます。</figcaption></figure>
+          <figure><img src="image/unity-12-apply-footer.png" alt="Applyボタンと未保存Scene状態が表示されたSheetStaff Window"><figcaption>Footerで検証結果を確認し、Applyを押します。Errorがあれば表示された「開く」から修正します。</figcaption></figure>
+          <figure><img src="image/unity-17-role-tag-applied.png" alt="Role TagをApplyした後のScene保存案内"><figcaption>Apply後はFooterにScene保存の案内が表示されます。</figcaption></figure>
+          <figure><img src="image/unity-22-manager-and-tag.png" alt="SceneにManagerとTag PlayerObjectが配置された状態" loading="lazy"><figcaption>Role Tagを有効にした場合は、ApplyでTag PlayerObjectも設定されます。</figcaption></figure>
           <div class="step-body"><ol><li>Footerの検証結果を確認します。Errorがあれば解消します。</li><li>「Apply」を押し、Hierarchy / Sceneへ設定を反映します。</li><li>Unityの <code>File &gt; Save</code>（または <code>Ctrl+S</code>）でSceneを保存します。</li></ol><div class="callout"><strong>大切</strong>　ApplyとScene保存は別の操作です。Apply後にSceneを保存してください。ワールドへ反映するには、その後VRChat SDKでBuild / Uploadします。</div></div>
         </article>
       </section>
